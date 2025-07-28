@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Games - Tysiee Game Zone</title>
+  <style>
+    body {
+      background: #111;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 42px;
+      margin-bottom: 30px;
+      color: #00ffcc;
+    }
+
+    .game-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .game-card {
+      background: #222;
+      border: 2px solid #00ffcc;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .game-card:hover {
+      transform: scale(1.05);
+    }
+
+    .game-card h2 {
+      color: #00ffcc;
+      margin-bottom: 10px;
+    }
+
+    .game-card p {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+
+    .game-card a {
+      display: inline-block;
+      padding: 10px 18px;
+      background: #00ffcc;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+
+    .game-card a:hover {
+      background: #00e0b0;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎮 Choose Your Game</h1>
+  <div class="game-list">
+    <div class="game-card">
+      <h2>🔐 Logic Lock</h2>
+      <p>Solve number-based puzzles to unlock the vault using logic and equations!</p>
+      <a href="logic-lock.html">Play Now</a>
+    </div>
+
+    <div class="game-card">
+      <h2>🧠 Memory Match</h2>
+      <p>Flip cards and test your memory by finding matching pairs under pressure.</p>
+      <a href="memory-game.html">Play Now</a>
+    </div>
+
+    <div class="game-card">
+      <h2>💣 Bomb Defusal</h2>
+      <p>Select safe tiles and avoid hidden bombs! Can you beat the grid?</p>
+      <a href="bomb-defusal.html">Play Now</a>
+    </div>
+
+    <div class="game-card">
+      <h2>❌,⭕ Tic-Tac-Toe</h2>
+      <p>Select safe tiles and avoid hidden bombs! Can you beat the grid?</p>
+      <a href="TTT.html">Play Now</a>
+    </div>
+
+  </div>
+</body>
+</html>
