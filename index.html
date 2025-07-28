@@ -5,48 +5,122 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tysiee Game Zone</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Orbitron', sans-serif;
+      background: #000;
+    }
+
     body {
-      background: linear-gradient(to right, #00c6ff, #0072ff);
-      color: white;
-      font-family: 'Segoe UI', sans-serif;
-      text-align: center;
-      height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      overflow: hidden;
+      align-items: center;
+      text-align: center;
+      position: relative;
     }
 
     h1 {
-      font-size: 60px;
-      animation: fadeIn 2s ease-in-out infinite alternate;
+      font-size: 80px;
+      font-weight: 800;
       letter-spacing: 2px;
+      background: linear-gradient(90deg, #00fff0, #ff00c8, #00ffd0);
+      background-size: 300% 300%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: animateText 5s ease infinite;
+      text-shadow: 0 0 10px rgba(255,255,255,0.3), 0 0 20px rgba(0,255,255,0.4);
+      -webkit-text-stroke: 1.2px white; /* White border around each letter */
+      margin-bottom: 50px;
+      z-index: 1;
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0.4; transform: scale(0.95); }
-      to { opacity: 1; transform: scale(1); }
+    @keyframes animateText {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
     button {
-      padding: 12px 25px;
-      margin-top: 30px;
+      padding: 14px 35px;
       font-size: 18px;
-      background-color: #fff;
-      color: #0072ff;
+      background: #28a745; /* Green default */
+      color: white;
       border: none;
       border-radius: 8px;
       cursor: pointer;
       font-weight: bold;
+      box-shadow: 0 0 15px #28a745;
+      z-index: 1;
+      transition: all 0.3s ease;
     }
 
     button:hover {
-      background-color: #e6e6e6;
+      background: #007bff; /* Blue on hover */
+      box-shadow: 0 0 25px #007bff;
+      transform: scale(1.05);
+    }
+
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      z-index: 0;
     }
   </style>
 </head>
 <body>
+  <div id="particles-js"></div>
+
   <h1>Tysiee Game Zone</h1>
   <button onclick="location.href='games.html'">🎮 Enter Game Zone</button>
+
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 80, "density": { "enable": true, "value_area": 800 }},
+        "color": { "value": "#ffffff" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.5 },
+        "size": { "value": 3 },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 4,
+          "direction": "none",
+          "out_mode": "out"
+        }
+      },
+      "interactivity": {
+        "events": {
+          "onhover": { "enable": true, "mode": "repulse" },
+          "onclick": { "enable": true, "mode": "push" }
+        },
+        "modes": {
+          "repulse": { "distance": 100 },
+          "push": { "particles_nb": 4 }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
 </body>
 </html>
