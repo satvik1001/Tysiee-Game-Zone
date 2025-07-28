@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Memory Card Game</title>
+ <link rel="stylesheet" href="memory.css" />
+<script src="memory.js" defer></script>
+
+
+</head>
+<body>
+  <h1>🧠 Memory Card Game</h1>
+  <div class="container">
+    <div class="left">
+      <div class="info">
+        <span>Matches: <span id="score">0</span></span>
+        <span>Moves: <span id="moves">0</span></span>
+        <span>Time: <span id="timer">0</span>s</span>
+        <button onclick="resetGame()">🔄 Reset</button>
+      </div>
+      <div class="game-board" id="gameBoard"></div>
+      <h2 id="message"></h2>
+    </div>
+
+    <div class="right">
+      <h3>📘 How to Play</h3>
+      <p>
+        यह एक मेमोरी कार्ड गेम है जहाँ:
+        <ul>
+          <li>किसी भी कार्ड पर क्लिक करें उसे पलटने के लिए।</li>
+          <li>फिर एक दूसरा कार्ड पलटें और मिलाने की कोशिश करें।</li>
+          <li>अगर दोनों मिल जाएँ, तो वे वहीं रहेंगे।</li>
+          <li>नहीं मिलने पर वे वापस छिप जाएँगे।</li>
+          <li>आपका लक्ष्य है सभी जोड़ियाँ कम से कम चालों में ढूँढना।</li>
+          <li>"🔄 Reset" बटन से आप गेम दोबारा शुरू कर सकते हैं।</li>
+        </ul>
+        शुभकामनाएँ! 🎯
+      </p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
