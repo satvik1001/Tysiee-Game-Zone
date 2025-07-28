@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Logic Lock: The Vault Puzzle</title>
+  <link rel="stylesheet" href="logic.css" />
+  <script src="logic.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="puzzle-area">
+      <div class="clue-row">A + B = ? →</div>
+      <div class="grid">
+        <input id="A" maxlength="2" />
+        <input id="B" maxlength="2" />
+      </div>
+      <div class="clue-row">C - D = ? →</div>
+      <div class="grid">
+        <input id="C" maxlength="2" />
+        <input id="D" maxlength="2" />
+      </div>
+      <div class="clue-column">
+        ↓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓<br />
+        A − C = ?<br />
+        B − D = ?
+      </div>
+      <button onclick="checkPuzzle()">🔓 Unlock Vault</button>
+      <button onclick="generatePuzzle()">⏭️ New Puzzle</button>
+      <p id="result"></p>
+
+      <div class="level-info">
+        <p>🆙 Level: <span id="level">1</span></p>
+        <p>✅ Solved: <span id="score">0</span></p>
+      </div>
+    </div>
+
+    <div class="instructions">
+      <h2>🔐 How to Play</h2>
+      <p>Enter digits (1–20) into boxes A, B, C, D so that:</p>
+      <ul>
+        <li>A + B = total (row 1)</li>
+        <li>C − D = total (row 2)</li>
+        <li>A − C = total (column A)</li>
+        <li>B − D = total (column B)</li>
+      </ul>
+      <p>All digits must be <strong>different</strong> and valid (1–20). Crack the vault to level up!</p>
+    </div>
+  </div>
+</body>
+</html>
