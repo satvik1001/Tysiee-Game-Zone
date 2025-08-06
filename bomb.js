@@ -1,3 +1,5 @@
+//This is a JavaScript Page of Bomb Difusal Game
+
 let score = 0;
 let highScore = 0;
 let bombSet = new Set();
@@ -65,3 +67,4 @@ function revealAllBombs() {
     box.removeEventListener("click", handleBoxClick);
   });
 }
+
