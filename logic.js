@@ -1,3 +1,5 @@
+//This is a JavaScript Page of Logic Lock Game
+
 let currentPuzzle = {};
 let level = 1;
 let score = 0;
@@ -73,3 +75,4 @@ function updateStats() {
 }
 
 window.onload = generatePuzzle;
+
