@@ -1,3 +1,5 @@
+//This is a CSS Page of Memory Game
+
 body {
   font-family: Arial, sans-serif;
   text-align: center;
@@ -34,3 +36,4 @@ body {
 .card.matched {
   background-color: #1abc9c;
 }
+
