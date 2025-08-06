@@ -1,3 +1,5 @@
+//This is a CSS Page of Tic Tac Toe Game
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background: #f0f0f0;
@@ -61,3 +63,4 @@ button {
 button:hover {
   background: #27ae60;
 }
+
