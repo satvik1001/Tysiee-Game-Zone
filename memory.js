@@ -1,3 +1,5 @@
+//This is a JavaSript Page of Memory Game
+
 //Grabs element from HTML to update User interface during game 
 document.addEventListener("DOMContentLoaded", () => {
   const gameBoard = document.getElementById('gameBoard');
@@ -136,3 +138,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   createBoard();
 });
+
