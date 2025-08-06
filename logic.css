@@ -1,3 +1,5 @@
+//This is a CSS Page of Logic Lock Game
+
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
@@ -94,3 +96,4 @@ button:hover {
   animation: pulseGlow 1s infinite;
   border-color: #00ffcc;
 }
+
