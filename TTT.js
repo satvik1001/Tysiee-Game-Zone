@@ -1,3 +1,5 @@
+//This is a JavaScript Page of Tic Tac Toe Game
+
 const cells = document.querySelectorAll('[data-cell]');
 const board = document.getElementById('board');
 const statusText = document.getElementById('status');
@@ -71,3 +73,4 @@ function endGame() {
 }
 
 restartBtn.addEventListener('click', startGame);
+
