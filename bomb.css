@@ -1,3 +1,5 @@
+//This is a CSS Page of Bomb Difusal Game
+
 body {
   font-family: Arial, sans-serif;
   background: #111;
@@ -72,3 +74,4 @@ button:hover {
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
+
